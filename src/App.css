@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-image: url('./congrats-card-bg.png');
+  background-size: cover;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.heading {
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 32px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 64px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #cffafe;
+  width: 80%;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 50%;
+    padding: 48px;
+    margin-top: 24px;
   }
+}
+
+@media screen and (min-width: 992px) {
+  .card {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    width: 30%;
+  }
+}
+
+.profile-img {
+  width: 145px;
+  height: 145px;
+}
+
+.card-title {
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .card-title {
+    font-size: 32px;
+  }
+}
+
+.card-description {
+  text-align: center;
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .card-description {
+    font-size: 18px;
+  }
+}
+
+.watch-img {
+  margin-top: 24px;
 }

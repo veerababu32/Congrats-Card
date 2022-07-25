@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import profileImg from "./congrats-card-profile-img.png";
+import watchImg from "./congrats-card-watch-img.png";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1 className="title">Congratulations</h1>
+      <div className="card">
+        <img src={profileImg} alt="profileImg" className="profile-img"/>
+        <h1 className="card-title">Kiran V</h1>
+        <p className="card-description">Vishnu Institute of Computer Education and Technology, Bhimavaram</p>
+        <img src={watchImg} alt="watchImg" className="watch-img" />
+      </div>
     </div>
   );
 }
